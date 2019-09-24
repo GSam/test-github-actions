@@ -18,7 +18,7 @@ jobs:
     - name: Build the stack
       run: docker version
     - name: Build the stack
-      run: docker run --platform linux ubuntu
+      run: docker run ubuntu
       
     - name: Build the stack
       run: docker-compose up -d
