@@ -18,6 +18,8 @@ jobs:
     - name: Build the stack
       run: docker version
     - name: Build the stack
+      run: wsl --list --verbose
+    - name: Build the stack
       run: docker run ubuntu
       
     - name: Build the stack
