@@ -15,7 +15,8 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        
+    - name: Build the stack
+      run: docker version
     - name: Build the stack
       run: docker run --platform linux ubuntu
       
