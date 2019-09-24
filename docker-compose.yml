@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    container_name: webapp-frontend
+    build: .
+    ports:
+      - "5000:5000"
+    platform: linux
+  redis:
+    container_name: redis-backend
+    image: "redis:alpine"
+    platform: linux
+    
+  windows:
+    container_name: windows-box
+    image: "windows/servercore:1903"
+    platform: windows
